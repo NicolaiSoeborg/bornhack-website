@@ -253,6 +253,11 @@ footer {
   }
 }
 
+@keyframes fadeinout {
+  0% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
 .sticky {
   position: sticky;
 }

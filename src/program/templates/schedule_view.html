@@ -52,6 +52,9 @@
           <td>
             <i class="fas fa-video{% if not slot.event.video_recording %}-slash{% endif %}"></i>
             <a href="{% url 'program:event_detail' camp_slug=camp.slug event_slug=slot.event.slug %}">{{ slot.event.title }}</a>
+            <a style="color: #e00; margin-left: 4px;" href="https://live.bornhack.dk/">
+              <i class="fa fa-circle" style="animation: fadeinout 1s infinite alternate; margin-right: 4px;"></i> LIVE
+            </a>
           </td>
           <td>{{ slot.event_location.icon_html }} {{ slot.event_location.name }}</td>
           <td>
